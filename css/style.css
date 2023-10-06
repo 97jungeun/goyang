@@ -1,0 +1,193 @@
+ *{
+          margin: 0; 
+          padding: 0;
+          text-decoration: none; 
+          box-sizing: border-box;
+          list-style: none;
+        }
+        body{
+            padding: 0 6.25rem;
+        }
+        a{
+            color: #333;
+        }
+        header {
+            width: 100%;
+            height: 8.125rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav>ul>li{
+            font-weight: 900;
+        }
+        nav>ul>li>a:hover{
+            color: 
+        }
+        .main-logo {
+            width: 18.75rem;
+            height: 6.25rem;
+            background: red;
+            justify-content: flex-start; /* 변경된 부분: 왼쪽 정렬 */
+            margin-left: 1.25rem;
+        }
+
+        nav {
+            margin-right: 0.625rem;
+            display: flex; /* 변경된 부분: flex로 설정하여 flex 아이템들을 가로로 배치 */
+            align-items: center;
+            justify-content: flex-end; /* 변경된 부분: 오른쪽 정렬 */
+        }
+
+        nav ul {
+            display: flex; /* 변경된 부분: flex로 설정하여 flex 아이템들을 가로로 배치 */
+        }
+
+        nav li {
+            flex-grow: 1; /* 변경된 부분: 각 li 요소가 동일한 간격으로 확장됨 */
+            text-align: center; /* 변경된 부분: 텍스트 가운데 정렬 */
+            padding: 0 1.875rem; /* 변경된 부분: 간격 조정 */
+        }
+
+        nav li a {
+            display: block; /* 변경된 부분: 링크를 블록 레벨 요소로 만들어 전체 영역 클릭 가능하게 함 */
+            padding: 0.625rem 0; /* 변경된 부분: 간격 조정 */
+        }
+        /*-------------------------------------------------------main_imgslide--------------------------------------------------------------------------*/
+        .main-imgslide {
+    width: 100%;
+    height: 46.875rem;
+    margin-bottom: 2.688rem;
+    background: rgb(247, 176, 176);
+    border-radius: 1.875rem;
+    overflow: hidden; /* 넘치는 부분을 숨기기 위해 추가 */
+    position: relative; /* 상대적 위치 지정 */
+}
+
+.imgslide-list {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.imgslide-list li {
+    flex: 0 0 100%;
+}
+
+.main-imgslide img {
+    width: 100%; /* 이미지 크기를 조정하려면 이 부분을 조절하세요 */
+    height: 100%;
+}
+
+.text-content {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+}
+
+/* 아래는 각 슬라이드의 배경색 설정 */
+.imgslide-list li:nth-child(1) {
+    background-color: red;
+}
+
+.imgslide-list li:nth-child(2) {
+    background-color: green;
+}
+
+.imgslide-list li:nth-child(3) {
+    background-color: blue;
+}
+        /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .second-section {
+            width: 100%;
+            height: 156.25rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .second-section>ul>li {
+            width: 100%;
+            height: 31.25rem;
+            display: flex;
+            margin-bottom: 1.25rem;
+            
+        }
+
+        .img-box1, .img-box3, .img-box5 {
+            border-radius: 1.875rem;
+            background: yellow;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 이미지 왼쪽 정렬 */
+            align-items: center; /* 이미지 세로 중앙 정렬 */
+        }
+
+        .img-box2, .img-box4 {
+            border-radius: 1.875rem;
+            background: orange;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* 이미지 세로 중앙 정렬 */
+            order: 2;
+            
+        }
+
+
+        .txt-box1, .txt-box3, .txt-box5 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.25rem; /* 텍스트에 여백 추가 */
+        }
+
+        .txt-box2, .txt-box4 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.25rem; /* 텍스트에 여백 추가 */
+            order: 1;
+        }
+        .txt-box1, .txt-box2, .txt-box3, .txt-box4, .txt-box5{
+            padding: 3.125rem 1.875rem;
+        }
+        .txt-box1>h3, .txt-box2>h3, .txt-box3>h3, .txt-box4>h3, .txt-box5>h3{
+            margin-bottom: 20px;
+        }
+        .txt-box1>p, .txt-box2>p, .txt-box3>p, .txt-box4>p, .txt-box5>p{
+            width: 100%;
+            height: 25rem;
+        }
+        .btn1 a:hover{font-weight: bold;}
+        /*---------------------------------------------------------------------------------------------------------------------------*/
+        footer {
+            margin-top: 5rem;
+            width: 100%;
+            height: 18.75rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            border-top: 1px solid #333;
+        }
+
+        .address, .tel {
+            text-align: center;
+        }
+        .footer-logo{
+            margin-top: -0.625rem;
+            margin-bottom: 1.875rem;
+        }
+        address{
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+        }
+        .tel{font-size: 0.875rem;}

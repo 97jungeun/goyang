@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빅데이터로 본 고양시</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="main-logo"><a href="#">
+            <img src="" alt="main-logo">
+        </a></div>
+        <nav>
+            <ul>
+                <li><a href="#">고양지표</a></li>
+                <li><a href="#">분야별 데이터</a></li>
+                <li><a href="#">데이터 지도</a></li>
+                <li><a href="#">평생학습도시</a></li>
+                <li><a href="#">상권분석</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="first-section">
+        <div class="main-imgslide">
+            <ul class="main-imgslide__list">
+                <li>
+                    <a href="#">
+                        <img src="" alt="main-img1">
+                        <div class="text-content">
+                            <h1 class="main-img-title">고양시 평생학습도시 <br> 배움의 접근성, 배움의 다양성, 배움의 지속성</h1>
+                            <p class="main-img-txt">고양시 평생학습도시 설명글</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="" alt="main-img2">
+                        <div class="text-content">
+                            <h1 class="main-img-title">두번째 제목</h1>
+                            <p class="main-img-txt">두번째 설명글</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="" alt="main-img3">
+                        <div class="text-content">
+                            <h1 class="main-img-title">세번째 제목</h1>
+                            <p class="main-img-txt">세번째 설명글</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="second-section">
+        <ul>
+            <li>
+                <div class="img-box1"><img src="" alt="img1"></div>
+                <div class="txt-box1">
+                    <h3>고양지표</h3>
+                    <p style="line-height: 25px;">고양시를 표현하는 다양한 정보를 차트, 표 등의 다양한 시각화 방법을 활용하여 <br>
+                    정보의 특성에 따른 다양한 지표를 직관적으로 서비스 합니다.</p>
+                    <div class="btn1"><a href="#">MORE VIEW ></a></div>
+                </div>
+            </li>
+            <li>
+                <div class="img-box2"><img src="" alt="img2"></div>
+                <div class="txt-box2">
+                    <h3>분야별 데이터</h3>
+                    <p style="line-height: 25px;">공공데이터, 통계연보, 사업체조사 등 <br>
+                    고양시가 공개한 다양한 데이터를 다운받을 수 있는 서비스를 제공합니다.</p>
+                    <div class="btn1"><a href="#">MORE VIEW ></a></div>
+                </div>
+            </li>
+            <li>
+                <div class="img-box3"><img src="" alt="img3"></div>
+                <div class="txt-box3">
+                    <h3>데이터 지도</h3>
+                    <p style="line-height: 25px;">고양시의 공공시설물, 재난안전, 문화관광 등 다양한 생활정보와 <br>
+                    관심주제별 맞춤 분석을 통한 공공데이터 융합정보를 지도기반으로 맞춤형 서비스를 제공합니다.</p>
+                    <div class="btn1"><a href="#">MORE VIEW ></a></div>
+                </div>
+            </li>
+            <li>
+                <div class="img-box4"><img src="" alt="img4"></div>
+                <div class="txt-box4">
+                    <h3>평생학습도시</h3>
+                    <p style="line-height: 25px;">평생학습에 대한 객관적이고 비교 가능한 평가지표를 통해 <br>
+                    고양시가 현재 평생학습도시로써의 역할을 얼마나 수행하는지, 발전하기 위하여 어떤 준비를 해야하는지<br> 정보를 공개하여 
+                    평생학습도시로써 지역사회와 함께하는 마을교육 공동체를 지원하고 <br>
+                     글로벌 마인드를 높이는 미래교육활동을 돕겠습니다.</p>
+                    <div class="btn1"><a href="#">MORE VIEW ></a></div>
+                </div>
+            </li>
+            <li>
+                <div class="img-box5"><img src="" alt="img5"></div>
+                <div class="txt-box5">
+                    <h3>상권분석</h3>
+                    <p style="line-height: 25px;">다양한 데이터 기반의 지역·업종별 상권정보 제공으로 간단분석, 상세분석, 입지업종분석 등의 기능을 통해 <br>
+                    예비창업자의 준비된 창업 유도 및 소상공인 경영안전을 도모하겠습니다.</p>
+                    <div class="btn1"><a href="#">MORE VIEW ></a></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div class="footer-logo"><img src="" alt="goyangsi-footer-logo"></div>
+        <address>
+            <p>경기도 고양시 덕양구 고양시청로10 (우)10460</p>
+            Copyright 2018 GOYANGCITY.All rights reserved.
+        </address>
+        <div class="tel">
+            <p>민원콜센터(시청) 031-909-9000</p>
+            <p>수화상담(경기도) 070-7947-3939</p>
+        </div>
+    </footer>
+    <script>
+const slides = document.querySelectorAll('.imgslide-list li');
+let currentSlide = 0;
+const slideWidth = slides[0].clientWidth;
+
+function showSlide(index) {
+    const offset = -index * slideWidth;
+    slides.forEach(slide => {
+        slide.style.transform = `translateX(${offset}px)`;
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+// 초기 슬라이드 보여주기
+showSlide(currentSlide);
+
+// 3초마다 슬라이드 전환
+setInterval(nextSlide, 3000);
+
+    </script>
+</body>
+</html>
