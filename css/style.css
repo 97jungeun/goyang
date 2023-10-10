@@ -7,6 +7,7 @@
           text-decoration: none; 
           box-sizing: border-box;
           list-style: none;
+          font-family: 'Noto Sans KR', sans-serif;
         }
         body{
             padding: 0 6.25rem;
@@ -59,59 +60,72 @@
 
         /*-------------------------------------------------------main_imgslide--------------------------------------------------------------------------*/
         .main-imgslide {
-    width: 100%;
-    height: 46.875rem;
-    margin-bottom: 2.688rem;
-    background: rgb(247, 176, 176);
-    border-radius: 1.875rem;
-    overflow: hidden; /* 넘치는 부분을 숨기기 위해 추가 */
-    position: relative; /* 상대적 위치 지정 */
-}
+            width: 100%;
+            height: 46.875rem;
+            margin-bottom: 2.688rem;
+            background: rgb(247, 176, 176);
+            border-radius: 1.875rem;
+            overflow: hidden; /* 넘치는 부분을 숨기기 위해 추가 */
+            position: relative; /* 상대적 위치 지정 */
+        }
 
-.imgslide-list {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-}
+        .imgslide-list {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+        }
 
-.imgslide-list li {
-    flex: 0 0 100%;
-}
+        .imgslide-list li {
+            flex: 0 0 100%;
+        }
 
-.main-imgslide img {
-    width: 100%; /* 이미지 크기를 조정하려면 이 부분을 조절하세요 */
-    height: 100%;
-}
+        .main-imgslide img {
+            width: 100%; /* 이미지 크기를 조정하려면 이 부분을 조절하세요 */
+            height: 100%;
+        }
+        .main-img-title{
+            margin-bottom: 10px;
+        }
 
-.text-content {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: left;
-}
+        .text-content {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: left;
+        }
+        /* 두번째 이미지의 .text-content 위치 조정 */
+        .imgslide-list li:nth-child(2) .text-content {
+            left: 25%; /* 원하는 위치에 배치하려는 값을 지정 */
+            transform: translateX(-50%);
+        }
 
-/* 아래는 각 슬라이드의 배경색 설정 */
-.imgslide-list li:nth-child(1) {
-    background-color: red;
-}
+        /* 세번째 이미지의 .text-content 위치 조정 */
+        .imgslide-list li:nth-child(3) .text-content {
+            left: 25%; /* 원하는 위치에 배치하려는 값을 지정 */
+            transform: translateX(-50%);
+        }
 
-.imgslide-list li:nth-child(2) {
-    background-color: green;
-}
+        .imgslide-list li:nth-child(1) {
+            background-color: red;
+        }
 
-.imgslide-list li:nth-child(3) {
-    background-color: blue;
-}
-/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
-.second-section {
-    width: 100%;
-    height: 156.25rem;
-    display: flex;
-    flex-direction: column;
-}
+        .imgslide-list li:nth-child(2) {
+            background-color: green;
+        }
+
+        .imgslide-list li:nth-child(3) {
+            background-color: blue;
+        }
+        /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+        .second-section {
+            width: 100%;
+            /* height: 156.25rem; */
+            display: flex;
+            flex-direction: column;
+        }
 
         .second-section>ul>li {
             width: 100%;
@@ -120,46 +134,37 @@
             margin-bottom: 1.25rem;
             
         }
-
-        .second-section > UL > LI:nth-child(odd) .img-box {
+        .img-box {
             border-radius: 1.875rem;
-            background: yellow;
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* 이미지 왼쪽 정렬 */
-            align-items: center; /* 이미지 세로 중앙 정렬 */
-        }
-
-        .second-section > UL > LI:nth-child(even) .img-box {
-            border-radius: 1.875rem;
-            background: orange;
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center; /* 이미지 세로 중앙 정렬 */
+
+        }
+
+        .second-section UL LI:nth-child(odd) .img-box {
+            background: yellow;
+        }
+
+        .second-section UL LI:nth-child(even) .img-box {
+            background: orange;
             order: 2;
         }
 
-        .second-section > ul > li:nth-child(odd) .txt-box{
+        .txt-box {
             width: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
-            /*padding: 0 1.25rem; */ /* 텍스트에 여백 추가 */
-        }
-        .second-section > ul > li:nth-child(even) .txt-box{
-            width: 50%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            /*padding: 0 1.25rem; /* 텍스트에 여백 추가 */
-            order: 1;
-        }
-        .txt-box{
             padding: 3.125rem 1.875rem;
         }
+
+        .second-section ul li:nth-child(even) .txt-box{
+            order: 1;
+        }
+
         .txt-box>h3{
             margin-bottom: 20px;
         }
@@ -168,10 +173,20 @@
             height: 25rem;
             line-height: 1.563rem;
         }
+        .img-box img{
+            border-radius: 1.875rem;
+            background: yellow;
+            width: 100%;
+            height: 31.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 이미지 왼쪽 정렬 */
+            align-items: center; /* 이미지 세로 중앙 정렬 */
+        }
         .btn a:hover{font-weight: bold;}
         /*---------------------------------------------------------------------------------------------------------------------------*/
         footer {
-            margin-top: 5rem;
+            margin-top: 7rem;
             width: 100%;
             height: 18.75rem;
             display: flex;
@@ -193,3 +208,82 @@
             font-size: 1rem;
         }
         .tel{font-size: 0.875rem;}
+        /*------------------------MediaQuery----------------------------------------------------------*/
+        @media screen and (max-width: 1000px){
+            body{
+                padding: 0 45px;
+            }
+            .main-logo{
+                width: 200px;
+            }
+            nav li {
+                flex-grow: 1; /* 변경된 부분: 각 li 요소가 동일한 간격으로 확장됨 */
+                text-align: center; /* 변경된 부분: 텍스트 가운데 정렬 */
+                padding: 0 25px; /* 변경된 부분: 간격 조정 */
+                font-size: 14px;
+            }
+            /*-------------------------------------------------------------------*/
+            .main-imgslide {
+                width: 100%;
+                height: 30rem;
+                margin-bottom: 2.688rem;
+                background: rgb(247, 176, 176);
+                border-radius: 1.875rem;
+                overflow: hidden; /* 넘치는 부분을 숨기기 위해 추가 */
+                position: relative; /* 상대적 위치 지정 */
+            }
+            .main-imgslide img{
+                height: 30rem;
+            }
+            .text-content {
+                position: absolute;
+                top: 25%;
+                left: 33%;
+                transform: translateX(-50%);
+                color: white;
+                text-align: left;
+            }
+            /* 두번째 이미지의 .text-content 위치 조정 */
+            .imgslide-list li:nth-child(2) .text-content {
+                left: 33%; /* 원하는 위치에 배치하려는 값을 지정 */
+                transform: translateX(-50%);
+            }
+    
+            /* 세번째 이미지의 .text-content 위치 조정 */
+            .imgslide-list li:nth-child(3) .text-content {
+                left: 33%; /* 원하는 위치에 배치하려는 값을 지정 */
+                transform: translateX(-50%);
+            }
+            /*----------------------------------------------------------------*/
+            .second-section>ul>li {
+                width: 100%;
+                height: 800px;
+                display: flex;
+                margin-bottom: 1.25rem;
+                flex-direction: column;
+            }
+            .second-section UL LI .img-box{
+                width: 100%;
+                height: 31.25rem;
+            }
+            .second-section UL LI .txt-box {
+                width: 100%;
+                height: 250px;
+                padding: 20px;
+            }
+            .second-section ul li:nth-child(even) .txt-box{
+                order: 2;
+            }
+            .txt-box-p{
+                font-size: 14px;
+                height: 150px;
+            }
+
+            footer{
+                margin-top: 0;
+            }
+            address{
+                font-size: 14px;
+            }
+        }
+    
