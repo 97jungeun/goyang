@@ -32,7 +32,9 @@
             width: 18.75rem;
             height: 6.25rem;
             background: var(--color-primary);
-            justify-content: flex-start; /* 변경된 부분: 왼쪽 정렬 */
+            display: flex;
+            justify-content: center;
+            align-items: center; 
             margin-left: 1.25rem;
         }
 
