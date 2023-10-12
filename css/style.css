@@ -63,7 +63,6 @@
             width: 100%;
             height: 46.875rem;
             margin-bottom: 2.688rem;
-            background: rgb(247, 176, 176);
             border-radius: 1.875rem;
             overflow: hidden; /* 넘치는 부분을 숨기기 위해 추가 */
             position: relative; /* 상대적 위치 지정 */
@@ -85,13 +84,13 @@
             height: 100%;
         }
         .main-img-title{
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
         }
 
         .text-content {
             position: absolute;
             top: 25%;
-            left: 25%;
+            left: 38%;
             transform: translateX(-50%);
             color: white;
             text-align: left;
@@ -119,6 +118,8 @@
         .imgslide-list li:nth-child(3) {
             background-color: blue;
         }
+        .main-img-title{font-size: 3.125rem;}
+        .main-img-subtitle{margin-bottom: 1.25rem;}
         /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
         .second-section {
             width: 100%;
@@ -145,11 +146,9 @@
         }
 
         .second-section UL LI:nth-child(odd) .img-box {
-            background: yellow;
         }
 
         .second-section UL LI:nth-child(even) .img-box {
-            background: orange;
             order: 2;
         }
 
@@ -166,7 +165,7 @@
         }
 
         .txt-box>h3{
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
         .txt-box-p{
             width: 100%;
@@ -211,15 +210,15 @@
         /*------------------------MediaQuery----------------------------------------------------------*/
         @media screen and (max-width: 1000px){
             body{
-                padding: 0 45px;
+                padding: 0 2.813rem;
             }
             .main-logo{
-                width: 200px;
+                width: 12.5rem;
             }
             nav li {
                 flex-grow: 1; /* 변경된 부분: 각 li 요소가 동일한 간격으로 확장됨 */
                 text-align: center; /* 변경된 부분: 텍스트 가운데 정렬 */
-                padding: 0 25px; /* 변경된 부분: 간격 조정 */
+                padding: 0 1.563rem;/* 변경된 부분: 간격 조정 */
                 font-size: 14px;
             }
             /*-------------------------------------------------------------------*/
@@ -227,7 +226,6 @@
                 width: 100%;
                 height: 30rem;
                 margin-bottom: 2.688rem;
-                background: rgb(247, 176, 176);
                 border-radius: 1.875rem;
                 overflow: hidden; /* 넘치는 부분을 숨기기 위해 추가 */
                 position: relative; /* 상대적 위치 지정 */
@@ -236,12 +234,22 @@
                 height: 30rem;
             }
             .text-content {
+                width: 87%;
                 position: absolute;
                 top: 25%;
-                left: 33%;
+                left: 48%;
                 transform: translateX(-50%);
                 color: white;
                 text-align: left;
+            }
+            .main-img-title{
+                font-size: 24px;
+            }
+            .main-img-subtitle{
+                font-size: 16px;
+            }
+            .main-img-txt{
+                font-size: 12px;
             }
             /* 두번째 이미지의 .text-content 위치 조정 */
             .imgslide-list li:nth-child(2) .text-content {
@@ -257,7 +265,7 @@
             /*----------------------------------------------------------------*/
             .second-section>ul>li {
                 width: 100%;
-                height: 800px;
+                height: 50rem;
                 display: flex;
                 margin-bottom: 1.25rem;
                 flex-direction: column;
@@ -268,22 +276,21 @@
             }
             .second-section UL LI .txt-box {
                 width: 100%;
-                height: 250px;
-                padding: 20px;
+                height: 15.625rem;
+                padding: 1.25rem;
             }
             .second-section ul li:nth-child(even) .txt-box{
                 order: 2;
             }
             .txt-box-p{
-                font-size: 14px;
-                height: 150px;
+                font-size: 0.875rem;
+                height: 9.375rem;
             }
 
             footer{
                 margin-top: 0;
             }
             address{
-                font-size: 14px;
+                font-size: 0.875rem;
             }
         }
-    
