@@ -9,11 +9,12 @@
           list-style: none;
           font-family: 'Noto Sans KR', sans-serif;
         }
-        body{
+        header, section{
             padding: 0 6.25rem;
         }
         a{
             color: #333;
+            cursor: p;
         }
         header {
             width: 100%;
@@ -109,7 +110,7 @@
             transform: translateX(-50%);
         }
 
-        .imgslide-list li:nth-child(1) {
+        /*.imgslide-list li:nth-child(1) {
             background-color: red;
         }
 
@@ -118,8 +119,8 @@
         }
 
         .imgslide-list li:nth-child(3) {
-            background-color: blue;
-        }
+           background-color: blue;
+        }*/
         .main-img-title{font-size: 3.125rem;}
         .main-img-subtitle{margin-bottom: 1.25rem;}
         /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -134,8 +135,7 @@
             width: 100%;
             height: 31.25rem;
             display: flex;
-            margin-bottom: 1.25rem;
-            
+            margin-bottom: 2.5rem;
         }
         .img-box {
             border-radius: 1.875rem;
@@ -146,10 +146,6 @@
             align-items: center; /* 이미지 세로 중앙 정렬 */
 
         }
-
-        .second-section UL LI:nth-child(odd) .img-box {
-        }
-
         .second-section UL LI:nth-child(even) .img-box {
             order: 2;
         }
@@ -176,7 +172,6 @@
         }
         .img-box img{
             border-radius: 1.875rem;
-            background: yellow;
             width: 100%;
             height: 31.25rem;
             display: flex;
@@ -184,17 +179,18 @@
             justify-content: center; /* 이미지 왼쪽 정렬 */
             align-items: center; /* 이미지 세로 중앙 정렬 */
         }
-        .btn a:hover{font-weight: bold;}
+        .btn a:hover{font-weight: bold; color: #2856b6;}
         /*---------------------------------------------------------------------------------------------------------------------------*/
         footer {
-            margin-top: 7rem;
+            margin-top: 2rem;
             width: 100%;
             height: 18.75rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items:center;
-            border-top: 1px solid #333;
+            background: #181f33;
+            color: #ffffff;
         }
 
         .address, .tel {
@@ -211,8 +207,8 @@
         .tel{font-size: 0.875rem;}
         /*------------------------MediaQuery----------------------------------------------------------*/
         @media screen and (max-width: 1000px){
-            body{
-                padding: 0 2.813rem;
+            header, section{
+                padding: 0 40px;
             }
             .main-logo{
                 width: 12.5rem;
@@ -239,16 +235,17 @@
                 width: 87%;
                 position: absolute;
                 top: 25%;
-                left: 48%;
+                left: 50%;
                 transform: translateX(-50%);
                 color: white;
                 text-align: left;
             }
             .main-img-title{
-                font-size: 1.5rem;
+                font-size: 1.625rem;
             }
             .main-img-subtitle{
-                font-size: 1rem;
+                width: 86%;
+                font-size: 0.875rem;
             }
             .main-img-txt{
                 font-size: 0.75rem;
@@ -286,11 +283,15 @@
             }
             .txt-box-p{
                 font-size: 0.875rem;
-                height: 9.375rem;
-            }
 
+            }
+            .btn{
+                margin-top: 
+            }
+/*-------------------------------------------------------------------------------------------------*/
             footer{
                 margin-top: 0;
+
             }
             address{
                 font-size: 0.875rem;
