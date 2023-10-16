@@ -63,7 +63,8 @@
         nav li {
             flex-grow: 1; /* 변경된 부분: 각 li 요소가 동일한 간격으로 확장됨 */
             text-align: center; /* 변경된 부분: 텍스트 가운데 정렬 */
-            padding: 0 1.875rem; /* 변경된 부분: 간격 조정 */
+            width: 120px;
+            margin: 0 0.5rem;
         }
 
         nav li a {
@@ -151,6 +152,15 @@
             display: flex;
             margin-bottom: 2.5rem;
         }
+        .second-section>ul>li:nth-child(2) img{
+            max-width: 700px;
+        }
+        .second-section>ul>li:nth-child(3) img{
+            max-width: 500px;
+        }
+        .second-section>ul>li:nth-child(4) img{
+            max-width: 500px;
+        }
         .img-box {
             border-radius: 1.875rem;
             width: 50%;
@@ -171,7 +181,6 @@
             flex-direction: column;
             padding: 3.125rem 1.875rem;
             justify-content: space-between;
-
         }
 
         .second-section ul li:nth-child(even) .txt-box{
@@ -184,16 +193,16 @@
         .txt-box-p{
             width: 100%;
             /* height: 25rem; */
-            line-height: 1.25rem;
+            line-height: 1.5rem;
         }
         .img-box img{
             border-radius: 1.875rem;
             width: 100%;
-            height: 31.25rem;
             display: flex;
             flex-direction: column;
             justify-content: center; /* 이미지 왼쪽 정렬 */
             align-items: center; /* 이미지 세로 중앙 정렬 */
+            max-width: 600px;
         }
         .btn a:hover{
             font-weight: bold; 
@@ -203,7 +212,7 @@
         footer {
             margin-top: 2rem;
             width: 100%;
-            height: 18.75rem;
+            height: 250px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -232,17 +241,24 @@
             }
             header{
                 height: 6.25rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             .main-logo{
                 width: 12.5rem;
                 height: 100px;
-                margin-left: 20px;
-                margin-top: 10px;
+                margin-top: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            nav{
+                display: none;
             }
             nav li {
                 flex-grow: 1; /* 변경된 부분: 각 li 요소가 동일한 간격으로 확장됨 */
                 text-align: center; /* 변경된 부분: 텍스트 가운데 정렬 */
-                padding: 0 1.563rem;/* 변경된 부분: 간격 조정 */
                 font-size: 0.875rem;
             }
             .main-logo-first{
@@ -303,14 +319,14 @@
             /*----------------------------------------------------------------*/
             .second-section>ul>li {
                 width: 100%;
-                height: 50rem;
+                height: 40rem; 
+                height: 3;
                 display: flex;
                 margin-bottom: 1.25rem;
                 flex-direction: column;
             }
             .second-section UL LI .img-box{
                 width: 100%;
-                height: 31.25rem;
             }
             .second-section UL LI .txt-box {
                 width: 100%;
@@ -331,7 +347,7 @@
 /*-------------------------------------------------------------------------------------------------*/
             footer{
                 margin-top: 0;
-
+                height: 250px;
             }
             address{
                 font-size: 0.875rem;
