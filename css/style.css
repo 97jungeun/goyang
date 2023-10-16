@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #FF0000;
+    --color-primary: #2856b6;
 }
 *{
           margin: 0; 
@@ -27,15 +27,15 @@
             font-weight: 900;
         }
         nav>ul>li>a:hover{
-            opacity: 0.5;
+            color: var(--color-primary);
         }
         .main-logo {
             width: 500px;
-            height: 6.25rem;
+            height: 6.25rem; /*100px*/
             display: flex;
             justify-content: center;
             align-items: center;
-            /* margin-left: 1.25rem; */
+            margin-top: 10px;
         }
         .main-logo a{
             display: flex;
@@ -131,8 +131,12 @@
         .imgslide-list li:nth-child(3) {
            background-color: blue;
         }*/
-        .main-img-title{font-size: 3.125rem;}
-        .main-img-subtitle{margin-bottom: 1.25rem;}
+        .main-img-title{
+            font-size: 3.125rem;
+        }
+        .main-img-subtitle{
+            margin-bottom: 1.25rem;
+        }
         /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
         .second-section {
             width: 100%;
@@ -191,7 +195,10 @@
             justify-content: center; /* 이미지 왼쪽 정렬 */
             align-items: center; /* 이미지 세로 중앙 정렬 */
         }
-        .btn a:hover{font-weight: bold; color: #2856b6;}
+        .btn a:hover{
+            font-weight: bold; 
+            color: var(--color-primary);
+        }
         /*---------------------------------------------------------------------------------------------------------------------------*/
         footer {
             margin-top: 2rem;
@@ -223,8 +230,14 @@
             header, section{
                 padding: 0 2.5rem;
             }
+            header{
+                height: 6.25rem;
+            }
             .main-logo{
                 width: 12.5rem;
+                height: 100px;
+                margin-left: 20px;
+                margin-top: 10px;
             }
             nav li {
                 flex-grow: 1; /* 변경된 부분: 각 li 요소가 동일한 간격으로 확장됨 */
@@ -232,6 +245,19 @@
                 padding: 0 1.563rem;/* 변경된 부분: 간격 조정 */
                 font-size: 0.875rem;
             }
+            .main-logo-first{
+                width: 56px;
+                height: 33px;
+            }
+            .main-logo-txt{
+                font-size: 16px;
+            }
+            .main-logo-second{
+                width: 150px;
+                height: 50px;
+                margin-bottom: 2px;
+            }
+
             /*-------------------------------------------------------------------*/
             .main-imgslide {
                 width: 100%;
