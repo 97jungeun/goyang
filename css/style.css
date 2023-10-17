@@ -23,9 +23,6 @@
             justify-content: space-between;
             align-items: center;
         }
-        nav>ul>li{
-            font-weight: 900;
-        }
         nav>ul>li>a:hover{
             color: var(--color-primary);
         }
@@ -65,6 +62,7 @@
             text-align: center; /* 변경된 부분: 텍스트 가운데 정렬 */
             width: 120px;
             margin: 0 0.5rem;
+            font-weight: 900;
         }
 
         nav li a {
@@ -353,3 +351,40 @@
                 font-size: 0.875rem;
             }
         }
+            @media screen and (max-width: 1300px){
+                nav ul li{
+                    margin: 0 3px;
+                }
+            }
+            @media screen and (max-width: 1260px){
+                header{
+                    height: 6.25rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .main-logo{
+                    width: 12.5rem;
+                    height: 130px;
+                    margin-top: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                nav{
+                    display: none;
+                }
+               /* .main-logo-first{
+                    width: 56px;
+                    height: 33px;
+                }
+                .main-logo-txt{
+                    font-size: 16px;
+                }
+                .main-logo-second{
+                    width: 150px;
+                    height: 50px;
+                    margin-bottom: 2px;
+                }*/
+    
+            }
