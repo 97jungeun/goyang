@@ -397,4 +397,13 @@
                 .main-img-txt{
                     font-size: 12px;
                 }
+                .txt-box{
+                    justify-content: space-around;
+                }
+                .second-section>ul>li{
+                    margin-bottom: 0;
+                }
+                .main-imgslide{
+                    margin-bottom: 0;
+                }
         }
