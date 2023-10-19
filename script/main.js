@@ -11,6 +11,29 @@
         pBig.forEach(elem => elem.classList.remove('active'));
         currentTarget.classList.add('active');
     }));
+
+    const unCheckedHamburger = () => {
+        const hamburger = document.getElementById('hamburger');
+        hamburger.checked = false;
+    }
+
+    const btnCloseSidebar = document.getElementById('btnCloseSidebar');
+    btnCloseSidebar.addEventListener('click', (event) => {
+        unCheckedHamburger();
+    });
+
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.addEventListener('click', (event) => {
+
+        console.log(event);
+
+        if(event.currentTarget !== event.target) {
+            return;
+        }
+
+        unCheckedHamburger();
+    }, false)
+
 })();
 
 const slides = document.querySelectorAll('.imgslide-list li');
