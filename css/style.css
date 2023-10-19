@@ -78,6 +78,7 @@
 
         #hamburger:checked ~ .sidebar .sidebarBg {
             transform: translateX(0);
+            visibility: visible;
         }
         
         .sidebar {
@@ -92,8 +93,9 @@
         }
 
         .sidebar > .sidebarBg {
-            width: 70vw;
-            transform: translateX(-110%);
+            width: 60vw;
+            visibility: hidden;
+            transform: translateX(-150%);
             transition: transform .25s ease-in-out;
             background-color: #ffffff;
             border-radius: 10px;
@@ -123,12 +125,10 @@
 
         .btn-close .line.line1 {
             transform-origin: 0% 0%;
-            transition: transform 0.4s ease-in-out;
             transform: rotate(45deg);
         }
         .btn-close .line.line2 {
             transform-origin: 0% 100%;
-            transition: transform 0.4s ease-in-out;
             transform: rotate(-45deg);
         }
 

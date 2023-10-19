@@ -13,6 +13,9 @@
     }));
 
     const unCheckedHamburger = () => {
+
+        document.querySelector('P.active')?.classList.remove('active');
+
         const hamburger = document.getElementById('hamburger');
         hamburger.checked = false;
     }
